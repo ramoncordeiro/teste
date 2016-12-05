@@ -1,0 +1,1 @@
+json.partial! "iventarios/iventario", iventario: @iventario

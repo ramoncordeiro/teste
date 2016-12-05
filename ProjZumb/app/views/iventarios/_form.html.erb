@@ -1,0 +1,42 @@
+<%= form_for(iventario) do |f| %>
+  <% if iventario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(iventario.errors.count, "error") %> prohibited this iventario from being saved:</h2>
+
+      <ul>
+      <% iventario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :agua %>
+    <%= f.text_field :agua %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comida %>
+    <%= f.text_field :comida %>
+  </div>
+
+  <div class="field">
+    <%= f.label :remedio %>
+    <%= f.text_field :remedio %>
+  </div>
+
+  <div class="field">
+    <%= f.label :municao %>
+    <%= f.text_field :municao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :usuario_id %>
+    <%= f.text_field :usuario_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Agua:</strong>
+  <%= @iventario.agua %>
+</p>
+
+<p>
+  <strong>Comida:</strong>
+  <%= @iventario.comida %>
+</p>
+
+<p>
+  <strong>Remedio:</strong>
+  <%= @iventario.remedio %>
+</p>
+
+<p>
+  <strong>Municao:</strong>
+  <%= @iventario.municao %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @iventario.usuario %>
+</p>
+
+<%= link_to 'Edit', edit_iventario_path(@iventario) %> |
+<%= link_to 'Back', iventarios_path %>

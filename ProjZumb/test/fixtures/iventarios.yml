@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  agua: MyString
+  comida: MyString
+  remedio: MyString
+  municao: MyString
+  usuario: one
+
+two:
+  agua: MyString
+  comida: MyString
+  remedio: MyString
+  municao: MyString
+  usuario: two

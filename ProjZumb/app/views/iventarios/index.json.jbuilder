@@ -1,0 +1,1 @@
+json.array! @iventarios, partial: 'iventarios/iventario', as: :iventario
