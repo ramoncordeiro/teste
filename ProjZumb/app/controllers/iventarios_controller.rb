@@ -24,7 +24,10 @@ class IventariosController < ApplicationController
   # POST /iventarios
   # POST /iventarios.json
   def create
-    @iventario = Iventario.new(iventario_params)
+    @usuario = Usuario.find(params[:usuario_id])
+    @iventario = @usuario.iventario.create(iventario_params)
+    redirect_to usuario_path(@usuario)
+    #@iventario = Iventario.new(iventario_params)
 
     respond_to do |format|
       if @iventario.save

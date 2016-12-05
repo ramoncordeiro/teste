@@ -20,5 +20,20 @@
   <%= @usuario.localizacao %>
 </p>
 
+
+
+<h2>Inventario</h2>
+<% @usuario.invetario.each do |ivent| %>
+  <p>
+    <strong>agua:</strong>
+    <%= ivent.agua %>
+  </p>
+ 
+  <p>
+    <strong>comida</strong>
+    <%= ivent.comida %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
 <%= link_to 'Back', usuarios_path %>
