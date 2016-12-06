@@ -1,7 +1,7 @@
 # teste
-
+Obs: A aplicação fora estruturada em MVC. Dentro da pasta APP existem as pastas: Model, View e Controller dentro destas  que estão as implementaçes descritas a baixo
 Basicamente o que está pronto:
--Classes: Usuario, Inventario ( no programa está Iventario) e Localizacao).
+ -Classes: Usuario, Inventario ( no programa está Iventario) e Localizacao).
 - As classes estão com os requisitos solicitados.
 - Sistema em modelo API REST 
 - Comunicação utilizando Json;
